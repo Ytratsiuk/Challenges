@@ -37,4 +37,38 @@ public class Duplicates {
         }
         return count;
     }
+
+//package MyPractice.interviewTasks;
+//import java.util.*;
+//public class CountDuplicates {
+//    static int countDuplicates(List<Integer> numbers) {
+//        Map<Integer, Integer> countMap = new HashMap<>(); // HashMap is created to keep track of the count of
+//        // each number in the input list
+//
+//        for (Integer num : numbers) { // iterating through each number in the input list
+//            countMap.put(num, countMap.getOrDefault(num, 0) + 1);
+//        }
+//        // countMap.getOrDefault(num, 0) retrieves the current count value for 'num' from the countMap
+//        // if 'num' is not in the countMap a default value is returned
+//        // countMap.getOrDefault(num) + 1 increments current count value of 'num' by 1
+//        // countMap.put(num, countMap.getOrDefault(num, 0) + 1) puts the new count value of 'num' into the countMap
+//        // with the 'num' key
+//
+//        System.out.println(countMap);
+//        int count = 0;
+//        for (Integer value : countMap.values()) { // values() method returns collection of Map values so you can iterate
+//            //over them
+//            if (value > 1) {
+//                count++;
+//            }
+//        }
+//
+//        return count;
+//    }
+//    public static void main(String[] args) {
+//        List<Integer> myList = Arrays.asList(12, 12, 13, 45, 78, 7, 7);
+//        // Arrays.asList() creates s fix-sized list backed by specified array
+//        System.out.println(countDuplicates(myList));
+//    }
+//}
 }

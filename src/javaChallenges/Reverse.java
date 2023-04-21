@@ -14,7 +14,6 @@ public class Reverse {
         String three = "";
         for (int i = two.length - 1; i >= 0; i--) {
             three = three + " " + two[i];
-
         }
         return three;
     }
