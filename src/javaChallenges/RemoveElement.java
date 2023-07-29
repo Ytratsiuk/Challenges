@@ -1,8 +1,5 @@
 package javaChallenges;
 
-import java.util.ArrayList;
-import java.util.List;
-
 //Given an integer array nums and an integer val, remove all occurrences of val in nums in-place.
 // The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 //Consider the number of elements in nums which are not equal to val be k, to get accepted, you need to do the following things:
@@ -10,7 +7,7 @@ import java.util.List;
 //The remaining elements of nums are not important as well as the size of nums.
 //Return k.
 public class RemoveElement {
-    public void main(String[] args) {
+    public static void main(String[] args) {
         int[] nums = new int[4];
         nums[0] = 3;
         nums[1] = 3;
@@ -23,6 +20,9 @@ public class RemoveElement {
     public static int removeElement(int[] nums, int val) {
         int i = 0;
         for (int j = 0; j < nums.length; j++) {
+            System.out.println(j);
+            System.out.println(i);
+            System.out.println(nums[j]);
             if (nums[j] != val) {
                 int temp = nums[i];
                 nums[i] = nums[j];
